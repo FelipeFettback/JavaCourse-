@@ -270,3 +270,147 @@
         // }
 
 //     }
+
+
+
+// Métodos estáticos: são métodos que pertencem à classe em si, e não a uma instância específica da classe.
+// Eles podem ser chamados diretamente usando o nome da classe, sem a necessidade de criar um objeto da classe.
+
+// Exemplo:
+
+// package org.example;
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         // Chamando o método estático da classe Computador
+//         double quadrado = Math.pow(2.00, 10);
+
+//         System.out.println("Preço com desconto: " + quadrado);
+//     }
+// }
+
+
+// Atributos estáticos: são atributos que pertencem à classe em si, e não a uma instância específica da classe.
+// Eles são compartilhados por todas as instâncias da classe e podem ser acessados diretamente usando o nome 
+// da classe, sem a necessidade de criar um objeto da classe.
+
+// Exemplo:
+
+// ../App.java
+
+// package org.example;
+
+// import javax.swing.*;
+
+// public class App {
+
+//         public static void main(String[] args) {
+
+//                 Casa c1 = Casa("Gabriela");
+//                 Casa c2 = Casa("Felipe");
+//                 Casa c3 = Casa("Renato");
+
+//                 Casa.cor = JOptionPane.showInputDialog("Digite a cor das casas: ");
+
+//                 System.out.println(c1.dono + "-" + c1.cor);
+//                 System.out.println(c2.dono + "-" + c2.cor);
+//                 System.out.println(c3.dono + "-" + c3.cor);
+//         }
+// }
+
+// class Casa {
+
+//         String dono;
+
+//         static String cor = "Branca";
+
+//         public Casa(String dono) {
+//                 this.dono = dono;
+//         }
+
+// }
+
+// Escolhendo Tons de Cores com JColorChooser
+
+
+// ../App.java
+
+// package org.example;
+
+// import javax.swing.*;
+
+// public class App {
+
+//         public static void main(String[] args) {
+
+//                 Casa c1 = Casa("Gabriela");
+//                 Casa c2 = Casa("Felipe");
+//                 Casa c3 = Casa("Renato");
+
+//                 Casa.cor = JColorChooser.showDialog(null, "Escolha a cor das casas", null).toString();
+
+//                 System.out.println(c1.dono + "-" + c1.cor);
+//                 System.out.println(c2.dono + "-" + c2.cor);
+//                 System.out.println(c3.dono + "-" + c3.cor);
+//         }
+// }
+
+// class Casa {
+
+//         String dono;
+
+//         static Color cor = Color.WHITE;
+
+//         public Casa(String dono) {
+//                 this.dono = dono;
+//         }
+
+// }
+
+
+// Método Construtor: é um método especial que é chamado automaticamente quando um objeto é criado a
+// partir de uma classe.
+// Ele tem o mesmo nome da classe e não possui um tipo de retorno, nem mesmo void
+
+// public class Pessoa {
+//     // Atributos da classe
+//     String nome;
+//     int idade;
+
+//     // Este é o Método Construtor
+//     public Pessoa(String nomeInicial, int idadeInicial) {
+//         this.nome = nomeInicial;
+//         this.idade = idadeInicial;
+//     }
+
+//     public void apresentar() {
+//         System.out.println("Olá, meu nome é " + this.nome + " e tenho " + this.idade + " anos.");
+//     }
+
+//     public static void main(String[] args) {
+//         // O construtor é acionado aqui pela palavra 'new'
+//         Pessoa pessoa1 = new Pessoa("Felipe", 22);
+        
+//         // Agora o objeto já tem os dados e pode executar seus métodos
+//         pessoa1.apresentar();
+//     }
+// }
+
+
+// Encapsulamento: é um princípio da programação orientada a objetos que consiste em proteger os dados
+// de um objeto, restringindo o acesso direto aos seus atributos e fornecendo métodos públicos 
+// (getters e setters) para acessar e modificar esses atributos de forma controlada.
+
+// Feito com: private string nome;
+
+// Interface: é um contrato que define um conjunto de métodos que uma classe deve implementar.
+// Ela permite que diferentes classes compartilhem um comportamento comum, mesmo que não estejam relacionadas
+// por herança. Uma interface pode conter apenas a assinatura dos métodos, sem implementação,
+// e as classes que a implementam devem fornecer a implementação desses métodos.
+// public interface Veiculo {
+//     void acelerar();
+//     void frear();
+//     void virar(String direcao);
+// }
