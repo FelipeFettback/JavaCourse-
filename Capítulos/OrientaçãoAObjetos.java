@@ -414,3 +414,15 @@
 //     void frear();
 //     void virar(String direcao);
 // }
+
+
+// Herança: é um princípio da programação orientada a objetos que permite que uma classe (subclasse)
+// herde atributos e métodos de outra classe (superclasse). A herança promove a reutilização de 
+// código e estabelece uma relação "é um" entre as classes, permitindo que a subclasse seja tratada
+//  como uma instância da superclasse. Em Java, a herança é implementada usando a palavra-chave "extends".
+
+// Polimorfismo: é um princípio da programação orientada a objetos que permite que objetos de diferentes
+// classes sejam tratados de forma uniforme, através de uma interface comum. O polimorfismo permite que 
+// métodos com o mesmo nome se comportem de maneira diferente, dependendo do tipo do objeto que os invoca.
+// Em Java, o polimorfismo é alcançado principalmente através da herança e da implementação de interfaces,
+// permitindo que uma única referência de tipo possa apontar para objetos de diferentes classes.
